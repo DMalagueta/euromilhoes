@@ -18,6 +18,8 @@ function init() {
 
     let submitBtn = document.getElementById('submitBtn');
 
+    let userKey = document.querySelector('section.userKey');
+
     // EVENTOS
 
     submitBtn.addEventListener('click', submit, false);
@@ -25,7 +27,23 @@ function init() {
     // FUNCOES 
 
     function submit(e) {
-        
+        keyIntoHtml();
         e.preventDefault();
+        
     }   
+
+    
+    function keyIntoHtml(){
+        userKey.innerHTML = `<h3>A tua chave:</h3>
+                            <p>
+                            ${num1.value}
+                            ${num2.value}
+                            ${num3.value}
+                            ${num4.value}
+                            ${num5.value}
+                            ${es1.value}
+                            ${es2.value}
+                            </p>                 
+        `;
+    }
 }

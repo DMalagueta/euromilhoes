@@ -8,6 +8,7 @@
 
 h1{
     text-align: center;
+    padding:.5em;
 }
 
 section.form{
@@ -35,4 +36,15 @@ section.form input{
 .btn button{
     padding:.7em;
     border-radius: 5%;
+}
+
+section.userKey {
+    padding:1em;
+    display: flex-start;
+    justify-content:center;
+    align-items:center;
+}
+
+section.userKey p {
+    margin: 10px;
 }
