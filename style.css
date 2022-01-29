@@ -15,7 +15,13 @@ section.form{
     background-color: tomato;
     padding: 0.7em;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: column;
+}
+
+section.form h1{
+    padding:.8em;
 }
 
 section.form input{
@@ -25,6 +31,15 @@ section.form input{
     color: red;
     text-align: center;
     font-size:20px;
+}
+
+.stars{
+    display:flex;
+    justify-content:center;
+}
+
+.stars input{
+    margin:5px;
 }
 
 .btn{
@@ -38,13 +53,21 @@ section.form input{
     border-radius: 5%;
 }
 
-section.userKey {
+section.userKey, section.randomKey{
     padding:1em;
     display: flex-start;
     justify-content:center;
     align-items:center;
 }
 
-section.userKey p {
+section.userKey p, section.randomKey p {
     margin: 10px;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
 }
